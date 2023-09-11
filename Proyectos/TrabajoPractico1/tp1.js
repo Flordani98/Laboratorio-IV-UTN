@@ -1,12 +1,53 @@
+
+
+function isNumber(dato){ /* Comentar bloque de codigo shift + alt + A */
+    let resp = true;
+    if(isNaN(dato) || dato == undefined || dato == null){
+        resp = false;
+    }
+    return resp;
+}
+
+
 /*
-1- Recibir una edad y mostrar si es mayor de edad o no.
+1- Recibir una edad y mostrar si es mayor de edad o no.*/
+const esMayor = (edad = 0) => {
+    let resp = false;
+    if(edad>=18 && edad<110){
+        resp = true;
+    }else if(!isNumber(edad)){
+        alert("ingrese un dato númerico");
+    }
+    return resp;
+}
+
+let undfn; //probando undefined, declaro una variable y no la inicializo para
+//luego pasarlo como parametro al metodo esMayor, NO funciona si en el parametro
+//de la funcion lo inicializo primero, por ej.: (edad = 0)
+let result = esMayor(undfn);
+console.log(result);
+
+
+
+
+/*
 2- Recibir una nota y mostrar su calificación correspondiente.
 ● 0-3: Muy deficiente
 ● 3-5: Insuficiente
 ● 5-6: Suficiente
 ● 6-7: Bien
 ● 7-9: Notable
-● 9-10: Sobresaliente
+● 9-10: Sobresaliente */ 
+
+const calificaNota = (nota = 0) =>{
+
+
+}
+
+
+
+
+/*
 3- Realiza un script que pida por teclado 3 edades y 3 nombres e indique el
 nombre del mayor.
 4- Realiza un script que pida un texto y lo muestre en mayúsculas.
