@@ -1,30 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ej-DOM.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <title>CLASE 3 - DOM</title>
 </head>
+
 <body>
     <header>
+        <h1>CLASE 3 - DOM</h1>
+        <div>
+
+        </div>
         <nav></nav>
     </header>
-    
-    <h1>CLASE 3 - DOM</h1>
-    
-    <section>
-        <h2>¡Bienvenido!</h2>
-        <h3>Toca los botones y sorprendete!</h3>
-    </section>
-    
-    <form>
-    
-    </form>
-    
+
+    <main>
+        <aside class="interaction">
+            <h2>¡Bienvenido!</h2>
+            <h3>Toca los botones y sorprendete!</h3>
+            <div class="interaction-elements">
+
+                <div id="foco-i">
+                    <img id="img-foco" src="./img/focob.png" alt="">
+                    <button class="btn-i" id="btn-off-foco">Click aqui para apagar el foco</button>
+                    <button class="btn-i" id="btn-on-foco">Click aqui para encender la luz</button>
+                </div>
+
+                <div id="text-i">
+                    <p id="paragraph-i">Texto que cambia!</p>
+                    <button class="btn-i" id="btn-change-color">Cambiar color de
+                        texto</button>
+                    <button class="btn-i" id="btn-change-size">Cambiar Tamaño</button>
+                    <!--#region ejemplos de prueba-->
+                    <!-- EJEMPLO <button onclick="cambiarFoto()" class="btn-i" id="btn-foco">Click en el foco para encender/apagar la luz</button> -->
+                    <!--<div class="cont-nodos">
+                        <p>Nodo 1</p>    
+                        <p>Nodo 2</p>    
+                        <p>Nodo 3</p>    
+                    </div>
+                    <div class="contenedor">
+
+                    </div> -->
+                    <!-- <input type="text" id="input-prueba"> -->
+                    <!-- <p id="prueba" class="rojo">Prueba!</p> -->
+                   
+                    <!-- EJEMPLO <button onclick="changeTextColor()" class="btn-i" id="btn-change-color">Cambiar color de texto</button>-->
+                     <!--#endregion-->
+                </div>
+            </div>
+        </aside>
+
+        <form id="formulario">
+            <h3>Iniciá sesión</h3>
+            <div class="form-group">
+                <div class="log-in">
+                    <label for="username">Tu usuario</label>
+                    <input type="text" id="username" name="username" placeholder="Ingresá tu nombre de usuario"
+                        required>
+                </div>
+                <div class="log-in">
+                    <label for="password">Tu clave</label>
+                    <input type="password" id="password" name="password" placeholder="Ingresá tu clave" required>
+                </div>
+                <div class="btn-box">
+                    <button class="btn" id="enter-btn">Ingresar</button>
+                    <button id="forget-btn">Bloqueé u olvidé mi usuario y/o clave</button>
+                    <button id="reccomend-btn">Recomendaciones de seguridad</button>
+                    <div>
+                        <br>
+                        <span>¿No tenes cuenta?</span>
+                        <button class="btn" id="register-btn">Registrate</button>
+                    </div>
+                    <div>
+                        <span>O ingresa con:</span>
+                        <a href="">Google</a>
+                        <a></a><!--git hub-->
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </main>
 
     <footer>
+        <a href="./ej-eventListen.html">Link a la otra pagina</a>
 
     </footer>
-    
+
+    <!-- <script type="module" src="./ej-DOM.js"></script> -->
+    <script src="./js/practicandoDOM.js"></script>
+
+    <!--#region Ejemplos en la clase!-->
+    <!-- <script>
+        function changeTextColor() {
+            let paragraph = document.getElementById("paragraph-i")
+            paragraph.style.color == "black" ? paragraph.style.color = "blue" : paragraph.style.color = "black";
+        } 
+
+        function cambiarFoto(){
+            let image = document.getElementById("img-foco");
+            let linkJS =  "img/focob.png";
+            let linkFoco2 = "img/focoa.png";
+
+            image.src == linkFoco2 ? image.src = linkJS : image.src = linkFoco2;
+        }
+    </script> -->
+    <!--#endregion -->
+
 </body>
+
 </html>

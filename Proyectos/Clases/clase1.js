@@ -61,7 +61,7 @@ console.log(cadena.lastIndexOf("de"));
 
 console.log(cadena.replace(cadena, "alala"));
 console.log(cadena.split(" ")); //importante, me lo separa segun el string que le pase, es decir el string cadena me lo 
-//separo en otro 3 string: "cadena" "de" "prueba"
+//separo en otro 3 string: "cadena" "de" "prueba" //devuelve un arreglo con los strings
 
 console.log(cadena.substring(0,6));
 

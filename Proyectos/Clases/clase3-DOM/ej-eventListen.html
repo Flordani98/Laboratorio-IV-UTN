@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ej-DOM.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Event Listener</title>
+</head>
+<body>
+    <h1 id="mi-titulo">Event Listener</h1>
+    <!--Ej: <h2 onclick="cambiarTitulo(this)" onmouseover="rojo(this)" onmouseout="azul(this)" id="h2-2">Ejemplos de event listener - Clase N° 3</h2> this: hace refrencia a este elemento h1, donde se aplica la accion -->
+    <h2 id="h2-2">Ejemplos de event listener - Clase N° 3</h2>
+    <main class="event-2">
+
+        <form id="formulario-2">
+            <h3>Registrate!</h3>
+            <div class="form-group">
+                <div class="register">
+                    <label for="comida">Comida favorita</label>
+                    <input type="text" id="comida" name="comida" placeholder="Ingresá tu comida favorita"
+                        required>
+                </div>
+                <div class="register">
+                    <label for="pelicula">Comida favorita</label>
+                    <input type="text" id="pelicula" name="pelicula" placeholder="Ingresá tu pelicula favorita"
+                        required>
+                </div>
+                <div class="register">
+                    <label for="palabra">Palabra al azar</label>
+                    <input type="text" id="palabra" name="palabra" placeholder="Ingresá una palabra al azar"
+                        required>
+                </div>
+                
+                <div class="register">
+                    <label for="numero">numero al azar</label>
+                    <input type="number" id="numero" name="numero" placeholder="Ingresá un numero al azar"
+                        required>
+                </div>
+
+                
+                
+                <div class="btn-box">
+                    <button class="btn" id="enter-btn">Registrarse</button>
+                </div>
+            </div>
+    
+        </form>
+    </section>
+
+    <footer>
+        <a href="./ejemplo-DOM.html">Link a la otra pagina</a>
+        
+    </footer>
+
+    <!--#region Ejemplos de la clase!!-->
+    <!-- <script>
+        function cambiarTitulo(elemento){
+            elemento.innerHTML = "Bienvenido cambiado";
+        }
+
+        function rojo(elemento){
+            elemento.style.color = "red";
+        }
+        function azul(elemento){
+            elemento.style.color = "blue";
+        }
+
+        // document.addEventListener() //permite agregar un evento al elemento HTML, sin mezclar el maquetado con la interacción
+        document.getElementById("pelicula").addEventListener("focus", function(evento){ //la funcion va a recibir el evento como parametro
+            evento.target.style.background = "blue"; //target es un atributo que hace referencia al elemento html que disparo el evento, en este caso pelicula
+            document.getElementById("mi-titulo").innerHTML = "Mi titulo cambiado!!! "
+        })
+        document.getElementById("pelicula").addEventListener("blur", function(evento){ //la funcion va a recibir el evento como parametro
+            evento.target.style.background = "white"; //target es un atributo que hace referencia al elemento html que disparo el evento, en este caso pelicula
+
+        })
+
+
+    </script> -->
+    <!--#endregion -->
+</body>
+</html>

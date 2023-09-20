@@ -1,0 +1,161 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*transforma 10 pixeles a 1 rem*/
+
+    /*ESTANDAR, utilizar en todos los proyectos*/
+}
+
+/*A todos los elementos o pseudoelementos antes o despues le apliquen o le hereden esa propiedad del border-box*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    color:black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    background-image: url(./img/fondo1.png);
+
+}
+header h1{
+    background-color: #e9d1bc;
+    padding: 1rem 0;
+    margin:0;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.6rem;
+}
+
+h1{
+    text-align: center;
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+main{
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.interaction{
+    border-radius: 1rem;
+    background-color: white;
+    margin: 0 1rem;
+    padding: 0 2rem;
+}
+
+.interaction img{
+    width: 13rem;
+}
+#foco-i{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+#text-i{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+form{
+    margin-right:4rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+form h3{
+    text-align: center;
+    /* color:rgb(140, 180, 255) ; */
+}
+
+.form-group{
+    padding: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.log-in label{
+    display: block;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.log-in input{
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    padding: 0.8rem;
+}
+
+.btn{
+    border:none;
+    color: white;
+    text-decoration: none;
+    padding: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: rgb(89, 89, 88);
+    width: 100%;
+    cursor:pointer;
+    border-radius: .25rem .688rem;
+
+}
+
+.btn-i{
+    border:none;
+    color: white;
+    text-decoration: none;
+    padding: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor:pointer;
+    background-color:rgb(196, 175, 158);
+}
+
+.btn-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+}
+
+
+#reccomend-btn, #forget-btn{
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+
+}
+
+footer{
+    text-align: center;
+}
+
+/*2da PAGINA*/
+
+.event-2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+#h2-2{
+    text-align: center;
+}
