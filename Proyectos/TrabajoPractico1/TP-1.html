@@ -3,10 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-tp1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Trabajo Práctico N°1</title>
 </head>
 <body>
-    <h1>Trabajo Práctico N°1</h1>
+    <header class="main-bar">
+ 
+        <nav class="main-nav">
+            <a href="">Inicio</a>
+            <a href="">Ejercicios</a>
+            <a href="https://www.google.com">Busqueda</a> <!--self-->
+            <a href="https://www.youtube.com" target="_blank">Youtube</a>
+            <a href="mailto://flordani98@gmail.com">Correo</a>
+        </nav>
+        <div class="page-logo">
+            <a id="link-page-logo" href="" >
+                <img src="./img/cat1.png" alt="Logo de la página">
+            </a>
+        </div>
+    </header>
+
+    <section class="container">
+        <h1 class="main-title">Trabajo Práctico N°1</h1>
+        <section class="exercise-list">
+            <div class="exercise" id="exercise-1">
+                <h2>Ejercicio N°1</h2>
+                <div class="exercise-content">
+                    <h3>¿Es mayor?</h3>
+                    <div class="campo">
+                        <label for="edad">Tu edad</label>
+                        <input type="number" id="edad" placeholder="Ingrese su edad">
+                    </div>
+                    <button class="btn" id="btn-exercise-1">Enviar</button>
+                    <div>
+                        <p id="result-exercise-1">Resultado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="exercise" id="exercise-2">
+                <h2>Ejercicio N°2</h2>
+
+                <div class="exercise-content">
+                    <h3>Ingrese su nota para recibir una calificación</h3>
+                    <div class="campo">
+                        <label for="nota">Tu nota</label>
+                        <input type="number" id="nota" placeholder="Ingrese su nota">
+                    </div>
+                    <button class="btn" id="btn-exercise-2">Enviar</button>
+                    <div>
+                        <p id="result-exercise-2">Resultado</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="exercise" id="exercise-3">
+                <h2>Ejercicio N°3</h2>
+
+                <div class="exercise-content">
+                    <h3>Ingrese 3 personas, con su edad y nombre para verificar cual es el mayor</h3>
+                    <form>
+                        <fieldset class="field-person">
+                            <legend>Persona 1</legend>
+                            <div class="campo">
+                                <label for="name-1">Nombre</label>
+                                <input type="text" id="name-1" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="campo">
+                                <label for="edad-1">Edad</label>
+                                <input type="number" id="edad-1" placeholder="Ingrese su edad">
+                            </div>
+                        </fieldset>
+                        <br>
+                        <fieldset class="field-person">
+                            <legend>Persona 2</legend>
+
+                            <div class="campo">
+                                <label for="name-2">Nombre</label>
+                                <input type="text" id="name-2" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="campo">
+                                <label for="edad-2">Edad</label>
+                                <input type="number" id="edad-2" placeholder="Ingrese su edad">
+                            </div>
+                        </fieldset>
+                        <br>
+    
+                        <fieldset class="field-person">
+                            <legend>Persona 3</legend>
+                            <div class="campo">
+                                <label for="name-3">Nombre</label>
+                                <input type="text" id="name-3" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="campo">
+                                <label for="edad-3">Edad</label>
+                                <input type="number" id="edad-3" placeholder="Ingrese su edad">
+                            </div>
+                        </fieldset>
+                        <br>
+                        
+                    </form>
+                    <button class="btn" id="btn-exercise-3">Enviar</button>                    
+                    <div>
+                        <p id="result-exercise-3">Resultado</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="exercise" id="exercise-4">
+                <h2>Ejercicio N°4</h2>
+                <div class="exercise-content">
+                    <h3>Convertir texto a mayusculas</h3>
+                    <div class="campo">
+                        <label for="text-ex4">Texto</label>
+                        <input type="text" id="text-ex4" placeholder="Ingrese un texto">
+                    </div>
+                    <button class="btn" id="btn-exercise-4">Enviar</button>
+                    <div>
+                        <p id="result-exercise-4">Resultado</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="exercise" id="exercise-5">
+                <h2>Ejercicio N°5</h2>
+                <div class="exercise-content">
+                    <h3>Escribir piramide</h3>
+                    <div class="campo">
+                        <label for="text-ex5">Texto</label>
+                        <input type="text" id="text-ex5" placeholder="Ingrese un texto">
+                    </div>
+                    <button class="btn" id="btn-exercise-5">Enviar</button>
+                    <div>
+                        <p id="result-exercise-5">Resultado</p>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+        
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="social-networks">
+            <a href="https://www.facebook.com" target="_blank"><img class="logo-footer" src="./img/facebook-logo.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="logo-footer" src="./img/instagram-logo.png" alt="Instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="logo-footer" src="./img/twitter-logo.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img class="logo-footer" src="./img/linkedin-logo.png" alt="LinkedIn"></a>
+
+        </div>
+    </footer>
+
     <script type="module" src="./tp1.js"></script>
 </body>
 </html>

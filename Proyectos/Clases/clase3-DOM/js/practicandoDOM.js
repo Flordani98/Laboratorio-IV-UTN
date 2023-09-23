@@ -11,23 +11,23 @@ document.getElementById("btn-change-color").addEventListener("click", function(e
 // })
 
 document.getElementById("btn-off-foco").addEventListener("click", function(evento){
-    document.getElementById("img-foco").src="../img/focoa.png"
+    document.getElementById("img-foco").src="img/focoa.png"
 
 })
 
 document.getElementById("btn-on-foco").addEventListener("click", function(evento){
-    document.getElementById("img-foco").src="../img/focob.png"
+    document.getElementById("img-foco").src="img/focob.png"
 
 })
 
-// let btnOff = document.getElementById("btn-off-foco");
-// let btnOn = document.getElementById("btn-on-foco");
-// let image = document.getElementById("img-foco");
+document.getElementById("btn-foco").addEventListener("click", function(evento){
+    let img = document.getElementById("img-foco2");
+    let dirOn = "http://127.0.0.1:5500/Clases/clase3-DOM/img/focob.png";
+    // let dirOn = "img/focob.png";
+    let dirOff = "img/focoa.png";
 
-// btnOff.onclick = function() {
-//     image.src = "Clase"
-// }
+    img.src == dirOn ? img.src = dirOff : img.src = dirOn;
 
-// btnOn.onclick = function() {
-//     image.src = "../img/focob.png"
-// }
+    console.log(img.src);
+
+})

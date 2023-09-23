@@ -1,3 +1,147 @@
-*{
-    color:black;
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*transforma 10 pixeles a 1 rem*/
+
+    /*ESTANDAR, utilizar en todos los proyectos*/
+}
+
+/*A todos los elementos o pseudoelementos antes o despues le apliquen o le hereden esa propiedad del border-box*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/fondo.png);
+    background-position-x: center;
+    font-size: 1.6rem;
+    color: rgb(253, 253, 253);
+}
+h2{
+    margin: 0;
+}
+
+h3{
+    margin: 0;
+}
+label{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.main-bar{
+    z-index: 1;
+    background-color: rgb(50, 142, 218);
+    position: fixed;
+    top: 0rem;
+    width: 100%;
+    height: 6rem;
+}
+
+.main-nav {
+    display: flex;
+    position: relative;
+    top:2rem;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.main-nav a:hover{
+   
+    text-shadow: 0rem 0rem 1rem white;
+}
+
+.page-logo img {
+
+    position: relative;
+    left: 1.5rem;
+    bottom:2rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+.main-title{
+    position: relative;
+    top: 6rem;
+    margin: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: .3rem;
+}
+
+.main-title:hover{
+    text-shadow: 0rem 0rem 1rem white;
+    cursor:default;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    gap:9rem;
+}
+
+.exercise-list{
+    display: flex;
+    flex-direction: column;
+    gap:9rem;
+    margin:0 5rem;
+}
+
+
+.exercise-content{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    padding-bottom: .5rem;
+    margin: .55rem auto;
+    
+    border-radius: 1rem;
+    background: url(../img/fondo-ej.jpg);
+    background-size: cover;
+    opacity: .8;
+
+    width: 50%;
+}
+
+.exercise-content:hover{
+    opacity: 1;
+}
+
+.exercise-content h3{
+    background-color: rgb(50, 142, 218);
+    width: 100%;
+    text-align: center;
+    padding: .5rem .3rem;
+}
+
+
+
+.social-networks{
+    display: flex;
+    gap:5rem;
+    justify-content: center;
+}
+
+.logo-footer{
+    width:4rem;
+    height:4rem;
+}
+
+footer{
+    position: relative;
+    top: 7rem;
+    margin: 3rem;
+    padding: 1rem;
 }
