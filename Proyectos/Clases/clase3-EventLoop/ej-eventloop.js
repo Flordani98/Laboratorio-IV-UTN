@@ -44,7 +44,7 @@ Hay prioridades:
 
 1.Tareas de JavaScript
 2.Microtareas
-3.Tareas de la WEB API
+3.Tareas de la WEB API : setTimeout, setInterval, DOM, llamadas al fetch
 
 Las tareas de JS van directo a la CallStack, se ejecutan primero
 En las microtareas y tareas de la WEB API van a la task QUEUE, luego se renderizan (en el render pipeline) y luego 

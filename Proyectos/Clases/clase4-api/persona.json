@@ -1,0 +1,13 @@
+{
+    "nombre": "Florencia",
+    "edad": 24,
+    "esEstudiante": true,
+    "direccion": {
+        "calle": "calle falsa 123",
+        "ciudad": "mar del plata"
+    },
+    "telefonos":[
+        "223-455-333",
+        "223-222-111"
+    ]
+}
